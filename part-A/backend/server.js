@@ -12,10 +12,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
+    // 👇 Only allow your deployed frontend
+    origin:
       "https://unni-project-iagp-mtuxdqm05-prince9318s-projects.vercel.app/",
-    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   }),
 );
