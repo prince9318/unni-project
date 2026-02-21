@@ -1,5 +1,6 @@
 const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+  import.meta.env.VITE_API_BASE_URL ||
+  "https://unni-project-8288fxkgu-prince9318s-projects.vercel.app/";
 
 const buildHeaders = (token, extra) => {
   const headers = {
@@ -10,8 +11,8 @@ const buildHeaders = (token, extra) => {
     headers.Authorization = `Bearer ${token}`;
   }
 
-  if (!headers['Content-Type'] && !headers['content-type']) {
-    headers['Content-Type'] = 'application/json';
+  if (!headers["Content-Type"] && !headers["content-type"]) {
+    headers["Content-Type"] = "application/json";
   }
 
   return headers;
@@ -24,13 +25,13 @@ const parseError = async (response) => {
       return data.message;
     }
   } catch {
-    return response.statusText || 'Request failed';
+    return response.statusText || "Request failed";
   }
-  return response.statusText || 'Request failed';
+  return response.statusText || "Request failed";
 };
 
 export const jsonRequest = async (path, options = {}) => {
-  const { method = 'GET', token, body, headers } = options;
+  const { method = "GET", token, body, headers } = options;
 
   const response = await fetch(`${API_BASE_URL}${path}`, {
     method,

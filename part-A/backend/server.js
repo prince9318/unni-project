@@ -10,7 +10,15 @@ import { notFound, errorHandler } from "./src/middleware/errorHandler.js";
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://unni-project-iagp-mtuxdqm05-prince9318s-projects.vercel.app/",
+    ],
+    credentials: true,
+  }),
+);
 app.use(express.json());
 app.use(morgan("dev"));
 
