@@ -1,7 +1,4 @@
-const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL ||
-  "https://unni-project-8288fxkgu-prince9318s-projects.vercel.app/";
-
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const buildHeaders = (token, extra) => {
   const headers = {
     ...(extra || {}),

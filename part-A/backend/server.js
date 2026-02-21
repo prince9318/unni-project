@@ -12,10 +12,7 @@ const app = express();
 
 app.use(
   cors({
-    // 👇 Only allow your deployed frontend
-    origin:
-      "https://unni-project-iagp-mtuxdqm05-prince9318s-projects.vercel.app/",
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: ["http://localhost:5173", "https://unni-project-iagp.vercel.app"],
     credentials: true,
   }),
 );
