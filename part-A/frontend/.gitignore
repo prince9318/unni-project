@@ -1,0 +1,126 @@
+# ============================================
+# DEPENDENCIES
+# ============================================
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+
+# ============================================
+# ENVIRONMENT VARIABLES
+# ============================================
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+
+# ============================================
+# BUILD OUTPUT
+# ============================================
+dist/
+dist-ssr/
+build/
+.next/
+out/
+
+
+# ============================================
+# LOGS
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+
+# ============================================
+# OS FILES
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+
+
+# ============================================
+# IDE / EDITOR FILES
+# ============================================
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+
+# WebStorm / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+.vim/
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*#
+.\#*
+
+# Atom
+.atom/
+
+
+# ============================================
+# LOCAL DEVELOPMENT
+# ============================================
+*.local
+.pnp
+.pnp.js
+
+
+# ============================================
+# TESTING
+# ============================================
+coverage/
+.nyc_output/
+.coverage/
+
+
+# ============================================
+# RUNTIME / CACHE
+# ============================================
+.cache/
+.parcel-cache/
+.env.cache/
+
+
+# ============================================
+# TEMPORARY FILES
+# ============================================
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
